@@ -1,0 +1,19 @@
+button{
+    box-shadow: 0 0 5px darkorange,
+    0 0 25px darkorange;
+    color: white;
+    background: darkorange;
+    transition: all 0.2s ease;
+}
+
+button:hover{
+    box-shadow: 0 0 5px darkorange,
+    0 0 25px darkorange, 0 0 50px darkorange,
+    0 0 100px darkorange, 0 0 200px darkorange;
+    color: white;
+    background: darkorange;
+}
+
+button:active {
+    transform: scale(0.96)
+}
