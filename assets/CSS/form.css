@@ -18,7 +18,7 @@ header {
 }
 
 header:hover{
-    box-shadow: 16px 15px 20px black;
+    box-shadow: 16px 15px 20px black
 }
 
 nav ul {
@@ -69,11 +69,11 @@ form {
 }
 
 form:hover{
-    box-shadow: 16px 15px 20px black;
+    box-shadow: 16px 15px 20px black
 }
 
 /* Estilos para os labels */
-form label{
+form label {
     display: block; 
     font-weight: bold; 
     margin-bottom: 10px; 
@@ -155,7 +155,6 @@ form button {
 
 form button:hover {
     box-shadow: 10px 10px 15px black;
-    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
