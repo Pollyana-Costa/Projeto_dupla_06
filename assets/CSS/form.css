@@ -153,8 +153,9 @@ form button {
     transition: background-color 0.3s ease; 
 }
 
-form button:hover {
+form button:hover{
     box-shadow: 10px 10px 15px black;
+    transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
