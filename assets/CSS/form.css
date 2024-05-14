@@ -1,0 +1,181 @@
+body{
+    font-family: "Jersey 10", sans-serif;
+    background-color: grey;
+    background-image: url(https://wallpapercave.com/wp/wp5849753.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+}
+
+header {
+    background-color: purple;
+    color: #CC4E00;
+    padding: 5px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 05px 05px 05px black;
+    font-size: large;
+}
+
+header:hover{
+    box-shadow: 16px 15px 20px black;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+h2{
+    color: #CC4E00;
+    font-size: 200%;
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+}
+
+form {
+    flex: 1; 
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #D1AFEC;
+    border-radius: 15px;
+    box-shadow: 05px 05px 05px black;
+    transition: box-shadow 0.3s ease;
+    font-size: large;
+    opacity: 80%;
+}
+
+form:hover{
+    box-shadow: 16px 15px 20px black;
+}
+
+/* Estilos para os labels */
+form label{
+    display: block; 
+    font-weight: bold; 
+    margin-bottom: 10px; 
+}
+
+/* Estilos para os inputs */
+form input, form select {
+    width: calc(100% - 10px); 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+form input:focus {
+    outline: none; /* Remove o contorno ao redor do input quando está focado */
+    border-color: darkorange; 
+    box-shadow: 0 0 5px darkorange; 
+}
+
+form label:focus {
+    outline: none; /* Remove o contorno ao redor do label quando está focado */
+    color: darkorange;
+}
+
+
+/* Estilos para os checkboxes */
+form input[type="checkbox"] {
+    display: none; 
+}
+
+form input[type="checkbox"] + label::before {
+    content: ''; /* Adiciona um conteúdo vazio antes dos checkboxes */
+    display: inline-block; /* Permite que o label e o pseudo-elemento fiquem em linha */
+    width: 20px; 
+    height: 20px; 
+    border: 2px solid darkorange; 
+    border-radius: 3px; 
+    background-color: white; 
+    margin-right: 10px; 
+    cursor: pointer; /* Muda o cursor para indicar que o elemento é clicável */
+}
+
+form input[type="checkbox"]:checked + label::before {
+    content: '\2713'; /* Adiciona um sinal de certo quando o checkbox está selecionado */
+    text-align: center; 
+    line-height: 20px; 
+    background-color: darkorange;
+}
+
+/* Estilos para a textarea */
+form textarea {
+    width: calc(100% - 24px); 
+    padding: 10px; 
+    border-radius: 5px; 
+    background-color: white; 
+    font-size: 16px; 
+    resize: none; /* Impede que o usuário redimensione a textarea */
+    margin-bottom: 10px; 
+}
+
+form textarea:focus {
+    outline: none; /* Remove o contorno ao redor da textarea quando está focada */
+    border-color: darkorange; 
+    box-shadow: 0 0 5px darkorange; 
+}
+
+/* Estilos para o botão */
+form button {
+    padding: 10px 20px; 
+    border: none; /* Remove a borda */
+    border-radius: 5px; 
+    background-color: darkorange; 
+    color: white; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+form button:hover {
+    box-shadow: 10px 10px 15px black;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    form {
+        flex-basis: 100%; 
+    }
+    body {
+        background-attachment: scroll; 
+    }
+    header {
+        padding: 10px; 
+    }
+
+    header nav ul {
+        display: flex; 
+        flex-direction: column; 
+    }
+
+    header nav ul li {
+        display: block; 
+        margin: 10px 0; 
+    }
+}

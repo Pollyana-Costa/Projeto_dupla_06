@@ -4,42 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/CSS/form.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Jersey+10&family=Jersey+15+Charted&display=swap"
+        rel="stylesheet">
     <title>Forms</title>
 </head>
 
 <body>
 
-    <section>
-        <div id="formulario_pedido">
-            <h2>Pedido de compra</h2>
-            <form method="get" action="">
-                <fieldset>
-                    <legend>Faça seu pedido</legend>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" target="_blank">Início</a></li>
+                <li><a href="index.html" target="_blank">Produtos</a></li>
+                <li><a href="formulario.html">Carrinho</a></li>
+                <li><a href="index.html" target="_blank">Contato</a></li>
+            </ul>
+        </nav>
+        <h1>Retro Revival Tech</h1>
+        <p>Descubra a nostalgia da tecnologia do passado.</p>
+    </header>
+
+    <main>
+        <section class="container">
+
+
+            <!-- formulário pedido -->
+            
+            <div id="form1">
+
+                <form method="get" action="">
+
+                    <h2>Pedido de compra</h2>
                     <label for="nome">Nome:</label>
-                    <br>
                     <input type="text" name="nome">
-
                     <br><br>
-
                     <label for="email">Email:</label>
-                    <br>
                     <input type="email" required name="email" placeholder="exemplo@xyz.com">
-                    
                     <br><br>
-
                     <label for="address">Endereço:</label>
-                    <br>
                     <input type="text" required name="address" placeholder="Rua Principal 1234">
-    
                     <br><br>
-
                     <label for="cep">CEP:</label>
-                    <br>
                     <input type="number" required name="cep" placeholder="00000-000">
-
                     <br><br>
 
-                    <legend>País:</legend>
+                    <legend><strong>País:</strong></legend>
                     <input type="text" list="listaPais" name="pais">
                     <datalist id="listaPais">
                         <option value="Brasil"></option>
@@ -47,7 +60,7 @@
 
                     <br><br>
 
-                    <legend>Estado:</legend>
+                    <legend><strong>Estado:</strong></legend>
                     <input type="text" list="listaEstados" name="estados">
                     <datalist id="listaEstados">
                         <option value="São Paulo"></option>
@@ -65,17 +78,12 @@
 
                     <br><br>
 
-                    <input type="checkbox" name="same-address" id="same-address">
-                    <label for="same-address">
-                        O endereço de entrega é igual ao meu endereço de cobrança
-                    </label>
-                    <br>
                     <input type="checkbox" name="save-info" id="save-info">
                     <label for="save-info">
                         Salve essas informações para a próxima vez
                     </label>
                     <br><br>
-                    <legend>Escolha seu produto</legend>
+                    <legend><strong>Escolha seu produto</strong></legend><br>
                     <input type="checkbox" name="gameBoy" id="gameBoy">
                     <label for="gameBoy">
                         Game Boy Classic
@@ -113,88 +121,32 @@
 
                     <br><br>
 
-                    <legend>Forma de pagamento:</legend>
-                    <br>
-                    <input type="radio" name="pay" checked="required">
-                    <label>Cartão de crédito</label>
-                    <br>
-                    <input type="radio" name="pay">
-                    <label>Cartão de débito</label>
-                    <br>
-                    <input type="radio" name="pay">
-                    <label>Boleto</label>
+                    <button>Enviar</button>
 
-                    <br><br>
+                </form>
+            </div>
 
-                    <label for="nomeCartao">Nome no cartão:</label>
-                    <br>
-                    <input type="text" name="nomeCartao">
+            <!-- formulário contato -->
 
-                    <br><br>
-
-                    <label for="numeroCartao">Número do cartão:</label>
-                    <br>
-                    <input type="text" name="numeroCartao" max="16">
-
-                    <br><br>
-
-                    <label for="cc-expiration">Data de vencimento:</label>
-                    <br>
-                    <input type="text" required name="address" placeholder="01/30">
-
-                    <br><br>
-
-                    <label for="cvv">CVV:</label>
-                    <br>
-                    <input type="text" required name="cvv" placeholder="123">
-
-                    <br><br>
-
-                    <input type="submit" value="Continuar para finalizar a compra" id="botao_pedido"></input>
-
-                </fieldset>
-            </form>
-        </div>
-    </section>
-
-    <br><br><br>
-    <hr><br><br>
-
-    <section>
-        <div id="formulario_feedback">
-            <h2>Deixe sua opinião</h2>
-            <form method="GET" action="">
-                <fieldset>
-                    <legend>Dados pessoais</legend>
-
+            <div id="form2">
+                <form method="GET" action="">
+                    <h2>Deixe sua opinião</h2>
                     <label for="nome">Nome:</label>
-                    <br>
                     <input type="text" name="nome">
-
                     <br><br>
-
                     <label for="email">Email:</label>
-                    <br>
                     <input type="email" required name="email" placeholder="exemplo@xyz.com">
-
                     <br><br>
-
                     <label for="tel">Telefone:</label>
-                    <br>
                     <input type="tel" name="contato">
-
                     <br><br>
-
-                    <label>Comentário</label><br>
+                    <label>Comentário</label>
                     <textarea rows="5" name="comentario"></textarea>
                     <br><br>
-                    <input type="submit" value="Enviar" id="botao_feedback"></input>
-
-                </fieldset>
-        </div>
-
-    </section>
-
+                    <button>Enviar</button>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
